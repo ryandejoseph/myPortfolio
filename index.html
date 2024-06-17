@@ -6,6 +6,12 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8cbd2eb937.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -43,7 +49,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>
+                    <p class="about-paragraphs">
                     Before anything else, I would like to thank you for your interest and taking your time reading this.
                     I am delighted for this opportunity to share a little bit about my journey and goals to you.
                     I am Ryan F. De Joseph, an aspiring web developer, software engineer and game developer. I am a fresh graduate and currently starting my career journey in web development. Since I'm still taking steps into this path just yet, I don't have any solid experience and that's why I made this portfolio where I can share my projects and to be able to track my progress when it comes to programming. I make sure that every projects I make, will improve my skills in web development and in other technologies. Each projects would be an opportunity to help me learn and grow.
@@ -54,20 +60,20 @@
                         <p class="tab-links" onclick="opentab('goals')">Goals</p>
                     </div>
                     <div class="tab-contents active-tab" id="personalDetails">
-                        <p>
-                            <i class="fa-solid fa-greater-than"></i><span>Birthday:</span> March 1, 2001<br>
-                            <i class="fa-solid fa-greater-than"></i><span>Birthplace:</span> Jawili, Tangalan, Aklan<br>
-                            <i class="fa-solid fa-greater-than"></i><span>Email:</span> ryandejoseph2001@gmail.com<br>
-                            <i class="fa-solid fa-greater-than"></i><span>Phone number:</span> 09319864937<br>
+                        <p class="about-paragraphs">
+                            <i class="fa-solid fa-greater-than"></i><span>Birthday :</span> March 1, 2001<br>
+                            <i class="fa-solid fa-greater-than"></i><span>Birthplace :</span> Jawili, Tangalan, Aklan<br>
+                            <i class="fa-solid fa-greater-than"></i><span>Email :</span> ryandejoseph2001@gmail.com<br>
+                            <i class="fa-solid fa-greater-than"></i><span>Phone number :</span> 09319864937<br>
                         </p>
                     </div>
                     <div class="tab-contents" id="whenItStarted">
-                        <p>
+                        <p class="about-paragraphs">
                             Back then, I was just this kid who likes to play online games. May it be on mobile phone or on a computer, it doesn't matter as long as I enjoy playing. When I got to highschool, my interest in gaming continues to grow. I just found myself going to a computer shop every weekend to play with my friends. I can still recall one of our favorite game which is DOTA. The moment that the game would start, the thrill and excitement inside me is overflowing. I would say that, this was my temporary way of escaping reality. This is also the time when my curiosity kicks in, thinking how these games are created. That's the time when I found out that a game is made up of thousand of lines of code for it to be able to function. This was the very moment I discovered programming. Which leads me to develop my deep interest in technology and the reason why I chosed Information Technology as my college program. Hoping that one day I will be able to design and develop websites, systems or applications that would bring solutions, convenience and even entertainment to different people from day to day lives.
                         </p>
                     </div>
                     <div class="tab-contents" id="goals">
-                        <p>
+                        <p class="about-paragraphs">
                         (to edit this paragraph)As a programmer, I enjoy coding so much. But nothing would be much more enjoying if my codes runs smoothly without any errors and fully function. I enjoy coming up with creative and useful apps, and I can't wait to learn more about the latest developments in this exciting world of technology. My ambition is to achieve proficiency  as a full-stack developer through continuous learning and practical experience. I believe  that being able to develop and shape the digital world is both a passion and profession. </p>
                     </div>
                 </div>
@@ -143,10 +149,6 @@
         </div>
     </div>
 
-
-
-
-
     <div id="contact">
         <div class="container">
             <div class="row">
@@ -177,10 +179,6 @@
             <p>Copyright @ Ryan<i class="fa-solid fa-heart"></i></p>
         </div>
     </div>
-
-
-
-
 
     <script>
         let tablinks = document.getElementsByClassName("tab-links");
