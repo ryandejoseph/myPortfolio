@@ -44,7 +44,7 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>
-                        Before anything else, I would like to thank you for your interest and taking your time reading this.
+                    Before anything else, I would like to thank you for your interest and taking your time reading this.
                     I am delighted for this opportunity to share a little bit about my journey and goals to you.
                     I am Ryan F. De Joseph, an aspiring web developer, software engineer and game developer. I am a fresh graduate and currently starting my career journey in web development. Since I'm still taking steps into this path just yet, I don't have any solid experience and that's why I made this portfolio where I can share my projects and to be able to track my progress when it comes to programming. I make sure that every projects I make, will improve my skills in web development and in other technologies. Each projects would be an opportunity to help me learn and grow.
                     </p>
@@ -165,10 +165,11 @@
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your email" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -197,13 +198,20 @@
         }
     </script>
     <script>
-        const scriptURL = '<https://script.google.com/macros/s/AKfycbzodsjevGZxUU_R6JtL7w-ooFfbFXz6t9jLcoFWpqXzGJaNJayTWD7iQH_pSXewpqn_/exec>'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzqvZHIvhDhDrKcUnK2hlbiedPiWO1FVbgybxYfVow5I1qMi-EHUySEvKF0XP_49VUn/exec'
         const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
       
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = " "
+                },5000)
+                form.reset()
+            })
             .catch(error => console.error('Error!', error.message))
         })
       </script>
