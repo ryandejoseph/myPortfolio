@@ -171,6 +171,9 @@ font-weight: 500;
 cursor: pointer;
 position: relative;
 }
+.tab-links:active{
+color:rgb(248, 109, 16);
+}
 .tab-links::after{
 content: " ";
 width: 0;
@@ -200,9 +203,9 @@ font-weight: bold;
 display: none;
 margin-top: -26px;
 }
-.about-paragraphs i,{
-    color: rgb(245, 135, 32);
-    margin-right: 4px;
+.about-paragraphs i{
+color: rgb(245, 135, 32);
+margin-right: 4px;
 }
 .tab-contents.active-tab{
 display: block;
