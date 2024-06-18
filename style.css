@@ -327,10 +327,10 @@ display: block;
     border-radius: 6px;
     text-decoration: none;
     color: white;
-    transition: background 0.5s;
+    transition: background-color 0.5s;
 }
 .btn:hover{
-    background:rgb(245, 135, 32);
+    background-color:rgb(245, 135, 32);
 }
 
 #contact{
@@ -409,4 +409,48 @@ form .btn2{
     color: orange;
     margin-top: -40px;
     display: block;
+}
+
+#header i{
+        display:none;
+}
+
+@media only screen and (max-width: 600px){
+    .body-background{
+        display:none;
+    }
+    .thumbnail-1{
+        display: none;
+    }
+    .main{
+        margin: 0;
+    }
+    .body{
+        margin: 0;
+    }
+    .name{
+        font-size: 20px;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .profile-info{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin: 0;
+        color: white;
+        font-size: 12px;
+    }
+    #header i{
+        display: block;
+        font-size: 25px;
+    }
+    .left-section a{
+        background:rgb(248, 109, 16);
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+  
 }
