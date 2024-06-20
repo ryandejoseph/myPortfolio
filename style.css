@@ -8,7 +8,6 @@ html{
 }
 body{
     background-color: rgb(58, 57, 57);
-    margin: 0px auto;
 }
 .body-background{
     clip-path: polygon(100% 0, 100% 100%, 49% 100%, 65% 48%, 65% 48%, 48% 0);
@@ -333,9 +332,7 @@ display: block;
     background-color:rgb(245, 135, 32);
 }
 
-#contact{
-    display:grid;
-}
+
 .contact-left{
     flex-basis: 35%;
     margin-left: 150px;
@@ -415,42 +412,84 @@ form .btn2{
         display:none;
 }
 
-@media only screen and (max-width: 600px){
+@media (max-width: 600px){
     .body-background{
-        display:none;
-    }
-    .thumbnail-1{
         display: none;
     }
-    .main{
-        margin: 0;
+    .left-section{
+        display: none;
     }
-    .body{
-        margin: 0;
+    .profile-picture{
+        display: none;
+    }
+    .right-section{
+        margin-top: 200px;
+        margin-left: -20px;
+        text-align: center;
+        text-wrap: nowrap;
+    }
+    .main{
+        margin-top: 70px;
+        margin-left: 50px;
     }
     .name{
-        font-size: 20px;
-        text-align: center;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 60px;
+        text-wrap: nowrap;
     }
-    .profile-info{
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        margin: 0;
-        color: white;
-        font-size: 12px;
+    .description{
+        font-size: 24px;
+    }.btn-cv{
+        text-wrap: nowrap;
+        font-size: 14px;
+        margin-left: 40px;
     }
-    #header i{
-        display: block;
-        font-size: 25px;
+    #about{
+        .row{
+            display: flex;
+            flex-direction: column;
+        }
+        .about-col-1{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .about-paragraphs{
+            font-size: 12px;
+        }
+        .tab-links{
+            font-size: 15px;
+        }
     }
-    .left-section a{
-        background:rgb(248, 109, 16);
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
+    .services-list{
+        display: flex;
+        flex-direction: column;
     }
-  
+    .work-list{
+        display: flex;
+        flex-direction: column;
+    }
+    #contact{
+        .row{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-left, .contact-right{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .sub-title{
+            margin-left: 10px;
+        }
+    }
+}
+@media (min-width: 700px) and (max-width: 1100px){
+    .body-background{
+        display: none;
+    }
+    .left-section{
+        display: none;
+    }
+    .profile-picture{
+        display: none;
+    }
 }

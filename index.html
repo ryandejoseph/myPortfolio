@@ -17,15 +17,15 @@
 <body>
     <div class="body-background"></div>
     <div id="header">
-        <div class="left-section">
+        <div class="left-section" id="sidemenu">
+            <!--<i class="fa-solid fa-xmark" onclick="closemenu()"></i>-->
             <div><a href="#header">Home</a></div>
             <div><a href="#about">About</a></div>
             <div><a href="#services">Services</a></div>
             <div><a href="#projects">Projects</a></div>
             <div><a href="#contact">Contact</a></div>
-            <i class="fa-solid fa-xmark"></i>
         </div>
-        <i class="fa-solid fa-bars"></i>
+        <!--<i class="fa-solid fa-bars" onclick="openmenu()"></i>-->
         <div class="right-section">
             <p>Welcome to my <span>Portfolio  &lt;/></span></p>
         </div>
@@ -36,7 +36,6 @@
             <h1 class="name">Hi, I'm <span>Ryan!</span></h1>
             <p class="description">An Aspiring Web Developer <br> from the Philippines</p>
             <a href="images/CV - Ryan De Joseph.docx" download class="btn-cv">Download My CV Here!</a>
-
         </div>
         <div class="profile-picture">
             <img class="thumbnail-1" src="images/thumbnail-1.jpg">
@@ -52,9 +51,9 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p class="about-paragraphs">
-                    Before anything else, I would like to thank you for your interest and taking your time reading this.
-                    I am delighted for this opportunity to share a little bit about my journey and goals to you.
-                    I am Ryan F. De Joseph, an aspiring web developer, software engineer and game developer. I am a fresh graduate and currently starting my career journey in web development. Since I'm still taking steps into this path just yet, I don't have any solid experience and that's why I made this portfolio where I can share my projects and to be able to track my progress when it comes to programming. I make sure that every projects I make, will improve my skills in web development and in other technologies. Each projects would be an opportunity to help me learn and grow.
+                    Before anything else, I would like to thank you for your interest and taking time reading this.
+                    I am delighted for this opportunity to share a bit about my background and journey to you.
+                    I am Ryan F. De Joseph, an aspiring web developer, software engineer and game developer. I am a fresh graduate and currently starting my career journey in web development. Since I'm still taking steps into this path just yet, I don't have any solid experience and that's why I made this portfolio to be my training ground to further enhance my skills and knowledge in coding. This is also a platform where I can share my projects and to be able to track my progress when it comes to programming. I make sure that every projects I make, will improve my skills in web development and in other technologies. Each projects would be an opportunity to help me learn and grow.
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('personalDetails')">Personal Details</p>
@@ -76,7 +75,7 @@
                     </div>
                     <div class="tab-contents" id="goals">
                         <p class="about-paragraphs">
-                        (to edit this paragraph)As a programmer, I enjoy coding so much. But nothing would be much more enjoying if my codes runs smoothly without any errors and fully function. I enjoy coming up with creative and useful apps, and I can't wait to learn more about the latest developments in this exciting world of technology. My ambition is to achieve proficiency  as a full-stack developer through continuous learning and practical experience. I believe  that being able to develop and shape the digital world is both a passion and profession. </p>
+                            Technology brings convenience to our lives and made our daily tasks easier. And as a programmer, it is my dream to develop web and mobile applications with the aim of helping people in their day-to-day lives. My primary goal for now is to become a full-stack developer. As of the moment, I'm already indulging myself in improving my skills and knowledge both in front-end and back-end field. It may not be easy, but I know in myself that I'm ready to take this challenge. If ever time would allow me to explore more, I would also love to see myself in the world of game development. However, I believe that before I can fully achieve these things, I need to have a real work experience in a tech industry. To which, I'm close to finding one.</p>
                     </div>
                 </div>
             </div>
@@ -97,12 +96,12 @@
                 </div>
 
                 <div>
-                        <i class="fa-solid fa-crop"></i>
-                        <h2>UI/UX design</h2>
-                       <p>
-                        UI/UX design stands for User Interface (UI) and User Experience (UX) design. It's a process of creating digital interfaces, such as websites, mobile apps, or software, with a focus on enhancing the user experience.
-                        </p>
-                        <a href="#">Learn more</a>
+                    <i class="fa-solid fa-crop"></i>
+                     <h2>UI/UX design</h2>
+                    <p>
+                    UI/UX design stands for User Interface (UI) and User Experience (UX) design. It's a process of creating digital interfaces, such as websites, mobile apps, or software, with a focus on enhancing the user experience.
+                    </p>
+                    <a href="#">Learn more</a>
                 </div>
 
                 <div>
@@ -215,5 +214,14 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+      <!--<script>
+        let sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+      </script>-->
 </body>
 </html>
