@@ -337,6 +337,9 @@ display: block;
     flex-basis: 35%;
     margin-left: 150px;
 }
+.contact-left a{
+    text-decoration: none;
+}
 .contact-left h1{
     margin-left: -120px;
 }
